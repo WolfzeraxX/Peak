@@ -1,0 +1,22 @@
+<div class="container-sm">
+  <form [formGroup]="formGroup">
+    <label class="form-label">Valor</label>
+    <input class="form-control" type="number" formControlName="inputA" />
+    <label class="form-label">Numero de Parcelas</label>
+    <input class="form-control" type="number" formControlName="inputB" />
+
+    <button class="btn btn-primary" (click)="clickHandler()">multiply</button>
+  </form>
+
+  <ng-container *ngIf="result | async as result">
+    <span
+      id="resultado"
+      class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3"
+      >{{ result | currency : "BRL" : "symbol" : "1.2-2" }}</span
+    >
+  </ng-container>
+
+  <app-consulta></app-consulta>
+</div>
+
+<img src="/assets/img/peakInvest.png" alt="" />

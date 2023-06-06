@@ -1,0 +1,14 @@
+
+<div class="container-sm" id="ConsultaApp">
+
+<form [formGroup]="formGroupConsulta">
+  <label  class="form-label">Digite um numero de 1 a 3</label>
+<input  class="form-control"type="number" formControlName="num" placeholder="Digite um número de 1 a 3">
+<button class="btn btn-primary"(click)="buscar()">Buscar</button>
+
+<p class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" *ngIf="response$ | async as response">Nome encontrado: {{ response.name }}</p>
+</form>
+
+
+</div>
+

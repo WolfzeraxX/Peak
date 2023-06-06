@@ -1,0 +1,19 @@
+.container-sm{
+
+  padding-top: 50px;
+  justify-content: center;
+
+}
+.btn{
+  margin-top: 20px;
+ margin-left: 516.5px;
+}
+.form-control{
+  box-shadow:  1px 1px black;
+  background-color:rgb(221, 221, 221)
+}
+
+#ConsultaAPP{
+
+  margin-top: 30px;
+}
